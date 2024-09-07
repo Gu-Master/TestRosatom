@@ -3,13 +3,8 @@
   <component name="GradleSettings">
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
-        <option name="externalProjectPath" value="$PROJECT_DIR$/filestorage" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="gradleJvm" value="corretto-21" />
-        <option name="modules">
-          <set>
-            <option value="$PROJECT_DIR$/filestorage" />
-          </set>
-        </option>
       </GradleProjectSettings>
     </option>
   </component>
