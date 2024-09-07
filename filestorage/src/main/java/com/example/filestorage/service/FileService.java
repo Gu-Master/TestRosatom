@@ -27,7 +27,6 @@ public class FileService {
         return fileRepository.findById(id);
     }
 
-
     public List<FileEntity> getAllFiles() {
         return fileRepository.findAll();
     }

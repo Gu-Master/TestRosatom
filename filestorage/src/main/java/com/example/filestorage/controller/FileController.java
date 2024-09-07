@@ -24,7 +24,6 @@ public class FileController {
         return ResponseEntity.ok(savedFile.getId());
     }
 
-
     @GetMapping("/{id}")
     public ResponseEntity<FileEntity> getFileById(@PathVariable Long id) {
         Optional<FileEntity> fileEntity = fileService.getFileById(id);
@@ -35,7 +34,6 @@ public class FileController {
         }
     }
 
-    // Метод для получения всех файлов
     @GetMapping("/all")
     public ResponseEntity<List<FileEntity>> getAllFiles() {
         List<FileEntity> files = fileService.getAllFiles();
