@@ -1,5 +1,5 @@
 package com.example.filestorage.controller;
-
+import jakarta.validation.Valid;
 import com.example.filestorage.model.FileEntity;
 import com.example.filestorage.service.FileService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,7 +18,7 @@ public class FileController {
     private FileService fileService;
 
     @PostMapping
-    public ResponseEntity<Long> createFile(@RequestBody FileEntity fileEntity) {
+    public ResponseEntity<Long> createFile(@Valid @RequestBody FileEntity fileEntity) {
         System.out.println("Полученные данные: " + fileEntity.getFileData()); // Логирование
         FileEntity savedFile = fileService.saveFile(fileEntity);
         return ResponseEntity.ok(savedFile.getId());

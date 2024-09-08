@@ -40,6 +40,15 @@ dependencies {
 	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
 
 	testImplementation 'org.hamcrest:hamcrest:2.2'
+
+	// Зависимость для поддержки валидации Jakarta
+	implementation 'jakarta.validation:jakarta.validation-api:3.0.2'
+
+	// Hibernate Validator — это наиболее распространённая реализация API валидации
+	implementation 'org.hibernate.validator:hibernate-validator:8.0.0.Final'
+
+	// Для поддержки валидации с использованием Spring Boot (опционально)
+	implementation 'org.springframework.boot:spring-boot-starter-validation'
 }
 
 tasks.named('test') {
